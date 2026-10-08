@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Francisco Javier Rodriguez Gaona</title>
     <style>
@@ -15,6 +15,7 @@
         .lang-switcher {
             position: sticky; top: 0; z-index: 100; background: var(--primary); 
             padding: 10px 20px; display: flex; justify-content: center; gap: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
         }
         .lang-switcher button {
             background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); 
@@ -76,226 +77,276 @@
 
 <!-- LANGUAGE SWITCHER -->
 <div class="lang-switcher">
-    <button onclick="setLang('en')" class="active">English</button>
+    <button onclick="setLang('en')">English</button>
     <button onclick="setLang('ru')">Русский</button>
-    <button onclick="setLang('es')">Español</button>
+    <button onclick="setLang('es')" class="active">Español</button>
     <button onclick="setLang('ja')">日本語</button>
+    <button onclick="setLang('zh')">中文</button>
 </div>
 
 <div class="container">
     <!-- SIDEBAR -->
     <aside class="sidebar">
-        <img src="profile.jpeg" alt="Francisco Rodriguez" class="profile-pic">
-        <h2 data-i18n="contact_title">Contact</h2>
-        <p>📍 <span data-i18n="location">Krasnodar, Russia</span></p>
+        <img src="./CV - Francisco Javier Rodriguez Gaona_files/profile.jpeg" alt="Francisco Rodriguez" class="profile-pic">
+        <h2 data-i18n="contact_title">Contacto</h2>
+        <p>📍 <span data-i18n="location">Krasnodar, Rusia</span></p>
         <p>📞 +7 (928) 039-96-68</p>
         <p>✉️ rodriguezgaona@mail.ru</p>
-        <p>🌍 <span data-i18n="citizenship">Citizen of Mexico</span></p>
+        <p>🌍 <span data-i18n="citizenship">Ciudadano de México</span></p>
 
-        <h2 data-i18n="work_auth_title">Work Authorization</h2>
+        <h2 data-i18n="work_auth_title">Autorización de Trabajo</h2>
         <div class="legal-box">
-            <p data-i18n="work_auth_desc"><strong>Residency Permit (ВНЖ):</strong> Eligible for Russian Residency Permit based on Honours Degree. Fully authorized to work in Russia without additional work permits.</p>
+            <p data-i18n="work_auth_desc"><strong>Permiso de Residencia (ВНЖ):</strong> Elegible para el Permiso de Residencia Ruso basado en el Título de Honor. Totalmente autorizado para trabajar en Rusia sin permisos adicionales.</p>
         </div>
 
-        <h2 data-i18n="languages_title">Languages</h2>
+        <h2 data-i18n="languages_title">Idiomas</h2>
         <ul>
-            <li><strong data-i18n="lang_es">Spanish:</strong> <span data-i18n="lang_es_level">Native</span></li>
-            <li><strong data-i18n="lang_en">English:</strong> C2 (<span data-i18n="lang_en_level">Proficient</span>)</li>
-            <li><strong data-i18n="lang_ru">Russian:</strong> B2 (<span data-i18n="lang_ru_level">Upper-Int.</span>)</li>
-            <li><strong data-i18n="lang_ja">Japanese:</strong> B1 (<span data-i18n="lang_ja_level">Intermediate</span>)</li>
+            <li><strong data-i18n="lang_es">Español:</strong> <span data-i18n="lang_es_level">Nativo</span></li>
+            <li><strong data-i18n="lang_en">Inglés:</strong> <span data-i18n="lang_en_level">C2</span></li>
+            <li><strong data-i18n="lang_ru">Ruso:</strong> <span data-i18n="lang_ru_level">B2</span></li>
+            <li><strong data-i18n="lang_ja">Japonés:</strong> <span data-i18n="lang_ja_level">B1</span></li>
+            <li><strong data-i18n="lang_zh">Chino:</strong> <span data-i18n="lang_zh_level">En estudio</span></li>
         </ul>
 
-        <h2 data-i18n="skills_title">Core Skills</h2>
+        <h2 data-i18n="skills_title">Habilidades Clave</h2>
         <ul>
-            <li data-i18n="skill1">International Business & Sales</li>
-            <li data-i18n="skill2">Client Relations & Retention</li>
-            <li data-i18n="skill3">Multilingual Education (E-Learning)</li>
-            <li data-i18n="skill4">Team Leadership & Training</li>
-            <li data-i18n="skill5">Business Correspondence</li>
-            <li data-i18n="skill6">Event & Seminar Organization</li>
+            <li data-i18n="skill1">Negocios Internacionales y Ventas</li>
+            <li data-i18n="skill2">Relaciones con Clientes</li>
+            <li data-i18n="skill3">Educación Multilingüe (E-Learning)</li>
+            <li data-i18n="skill4">Liderazgo y Formación de Equipos</li>
+            <li data-i18n="skill5">Correspondencia Comercial</li>
+            <li data-i18n="skill6">Organización de Eventos</li>
+            <li data-i18n="skill7">Marketing de Influencia</li>
+            <li data-i18n="skill8">Emprendimiento y Fundación de Empresas</li>
         </ul>
 
-        <h2 data-i18n="driving_title">Driving License</h2>
-        <p data-i18n="driving_desc">Category A (Motorcycles)</p>
+        <h2 data-i18n="driving_title">Licencia de Conducir</h2>
+        <p data-i18n="driving_desc">Categoría A – Automóviles y Motocicletas (México)</p>
     </aside>
 
     <!-- MAIN CONTENT -->
     <main class="main">
         <header class="header">
             <h1 data-i18n="name">Francisco Javier Rodriguez Gaona</h1>
-            <h3 data-i18n="target_role">Client Relations Manager | International Business Professional</h3>
-            <p style="font-size: 14px; color: var(--light-text);" data-i18n="target_details">Expected Salary: 70,000 RUB net | Full-time, Remote/On-site | Open to rare business trips</p>
+            <h3 data-i18n="target_role">Gerente de Relación con Clientes | Negocios Internacionales | Fundador</h3>
+            <p style="font-size: 14px; color: var(--light-text);" data-i18n="target_details">Salario esperado: 70,000 RUB neto | Tiempo completo | Disponible para viajes raros</p>
         </header>
 
         <section>
-            <h2 class="section-title" data-i18n="about_title">Profile</h2>
-            <p style="font-size: 14px;" data-i18n="about_desc">International business professional with 10+ years of experience in client relations, sales, and operations across Mexico, Maldives, and Russia. Master's in International Business Management (Honours / Red Diploma) from Kuban State University. Proven track record of increasing revenue through strategic sales initiatives and building long-term client relationships in luxury hospitality and tourism sectors. Multilingual communicator (Spanish, English, Russian, Japanese) with strong cross-cultural competence. Fully authorized to work in Russia.</p>
+            <h2 class="section-title" data-i18n="about_title">Perfil</h2>
+            <p style="font-size: 14px;" data-i18n="about_desc">Profesional de negocios internacionales con 10+ años de experiencia en relaciones con clientes, ventas y operaciones en México, Maldivas y Rusia. Fundador de Grupo Nexus, agencia internacional de marketing de influencia. Maestría en Gestión (Negocios Internacionales) con Honores de la Universidad Estatal de Kuban, actualmente cursando una segunda Maestría en Ictiología en KUBSU. Historial comprobado de aumento de ingresos a través de iniciativas estratégicas. Comunicador multilingüe (Español, Inglés, Ruso, Japonés, Chino básico). Totalmente autorizado para trabajar en Rusia.</p>
         </section>
 
         <section>
-            <h2 class="section-title" data-i18n="exp_title">Professional Experience (10 years 11 months)</h2>
+            <h2 class="section-title" data-i18n="exp_title">Experiencia Profesional</h2>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job1_title">English & Spanish Language Teacher</p><p class="job-company">Top Class, Krasnodar</p></div>
-                    <span class="job-date" data-i18n="job1_date">Oct 2025 – Present</span>
+                    <div><p class="job-title" data-i18n="job0a_title">Fundador & CEO</p><p class="job-company">Grupo Nexus (SAS), México / Madrid</p></div>
+                    <span class="job-date" data-i18n="job0a_date">Verano 2025 – Presente</span>
                 </div>
                 <ul>
-                    <li data-i18n="job1_b1">Deliver customized 1-on-1 language training (A2–B2 levels) for adult professionals, focusing on interview preparation, travel, relocation, and business communication</li>
-                    <li data-i18n="job1_b2">Develop custom curricula using communicative methodology combined with digital tools (Quizlet, LingQ, Speechling, Netflix-based learning)</li>
-                    <li data-i18n="job1_b3">Maintain consistent high ratings (4.9–5.0) through personalized instruction and responsive teaching approach</li>
-                    <li data-i18n="job1_b4">Provide flexible scheduling options (online/offline) to accommodate diverse student needs</li>
+                    <li data-i18n="job0a_b1">Fundación de agencia internacional de marketing de influencia con raíces mexicanas y sede operativa en Europa</li>
+                    <li data-i18n="job0a_b2">Conexión de marcas globales con <strong>+150 creadores hispanohablantes</strong> en <strong>12 países</strong> (USA, México, Colombia, Argentina, España)</li>
+                    <li data-i18n="job0a_b3">Soluciones 360°: estrategia de influencers, gestión de contratos, métricas & ROI, roster de talento (belleza, gaming, lifestyle, tecnología)</li>
+                    <li data-i18n="job0a_b4">Construcción de red privada de talento con alto engagement real y alineación a KPIs de marca</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job2_title">English Teacher & Methodologist</p><p class="job-company">Solnechny Kindergarten, Krasnodar</p></div>
+                    <div><p class="job-title" data-i18n="job0b_title">Instructor de Buceo</p><p class="job-company">Drugoi Mir, Gelendzhik, Rusia</p></div>
+                    <span class="job-date" data-i18n="job0b_date">Verano 2025</span>
+                </div>
+                <ul>
+                    <li data-i18n="job0b_b1">Enseñanza de cursos de buceo y guía de inmersiones durante la temporada de verano</li>
+                    <li data-i18n="job0b_b2">Atención a clientes internacionales en centro de buceo del Mar Negro</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><p class="job-title" data-i18n="job0c_title">Docente Independiente & Conferencista</p><p class="job-company">Universidad KUBSU, Krasnodar</p></div>
+                    <span class="job-date" data-i18n="job0c_date">Verano 2025 – Presente</span>
+                </div>
+                <ul>
+                    <li data-i18n="job0c_b1">Clases independientes de español, inglés y japonés</li>
+                    <li data-i18n="job0c_b2">Enseñanza de cultura mexicana: historia, cocina y tradiciones</li>
+                    <li data-i18n="job0c_b3">Conferencias en la Universidad KUBSU</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><p class="job-title" data-i18n="job1_title">Profesor de Inglés y Español</p><p class="job-company">Top Class, Krasnodar</p></div>
+                    <span class="job-date" data-i18n="job1_date">Oct 2025 – Presente</span>
+                </div>
+                <ul>
+                    <li data-i18n="job1_b1">Entrenamiento 1 a 1 personalizado (A2–B2) para adultos: entrevistas, viajes, negocios</li>
+                    <li data-i18n="job1_b2">Planes de estudio con herramientas online (Quizlet, LingQ)</li>
+                    <li data-i18n="job1_b3">Calificaciones consistentes de 4.9–5.0</li>
+                    <li data-i18n="job1_b4">Horarios flexibles (online/offline)</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div><p class="job-title" data-i18n="job2_title">Profesor de Inglés y Metodólogo</p><p class="job-company">Solnechny Kindergarten, Krasnodar</p></div>
                     <span class="job-date" data-i18n="job2_date">Sep 2024 – Sep 2025</span>
                 </div>
                 <ul>
-                    <li data-i18n="job2_b1">Developed and delivered comprehensive English language programs for preschool children</li>
-                    <li data-i18n="job2_b2">Created lesson plans, educational materials, and interactive/gamified learning activities</li>
-                    <li data-i18n="job2_b3">Organized thematic events to engage young learners and enhance language acquisition</li>
-                    <li data-i18n="job2_b4">Tracked student progress and communicated development with parents</li>
-                    <li data-i18n="job2_b5">Established assessment criteria to measure learning outcomes</li>
-                    <li data-i18n="job2_b6">Participated in educational quality monitoring and curriculum improvement initiatives</li>
+                    <li data-i18n="job2_b1">Programas integrales de inglés para preescolares</li>
+                    <li data-i18n="job2_b2">Materiales educativos y actividades interactivas</li>
+                    <li data-i18n="job2_b3">Eventos temáticos para fomentar el aprendizaje</li>
+                    <li data-i18n="job2_b4">Seguimiento del progreso con padres</li>
+                    <li data-i18n="job2_b5">Criterios de evaluación</li>
+                    <li data-i18n="job2_b6">Participación en monitoreo de calidad</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job3_title">Diving Center Manager / Instructor</p><p class="job-company">Kashalot Diving Center, Krasnodar</p></div>
-                    <span class="job-date" data-i18n="job3_date">Jun 2024 – Aug 2025</span>
+                    <div><p class="job-title" data-i18n="job3_title">Gerente de Centro de Buceo / Instructor</p><p class="job-company">Kashalot Diving Center, Krasnodar</p></div>
+                    <span class="job-date" data-i18n="job3_date">Jun 2024 – Ago 2025</span>
                 </div>
                 <ul>
-                    <li data-i18n="job3_b1">Managed daily center operations, coordinating a team of instructors and support staff to ensure high-quality client service delivery</li>
-                    <li data-i18n="job3_b2">Developed and implemented a sales referral system with the sales team, increasing service revenue by <strong>20% within 3 months</strong> (peak summer season)</li>
-                    <li data-i18n="job3_b3">Established B2B partnerships with local hotels, expanding client acquisition channels and building a recurring revenue stream</li>
-                    <li data-i18n="job3_b4">Consulted clients on equipment selection and course progression, achieving high customer satisfaction and repeat bookings</li>
-                    <li data-i18n="job3_b5">Oversaw equipment inventory, maintenance schedules, and safety compliance</li>
+                    <li data-i18n="job3_b1">Gestión de operaciones diarias del centro</li>
+                    <li data-i18n="job3_b2">Sistema de referencias que aumentó ingresos <strong>20% en 3 meses</strong></li>
+                    <li data-i18n="job3_b3">Alianzas B2B con hoteles locales</li>
+                    <li data-i18n="job3_b4">Asesoramiento a clientes y retención</li>
+                    <li data-i18n="job3_b5">Control de inventario y cumplimiento de seguridad</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job4_title">Resort Dive Instructor</p><p class="job-company">Paradise Island (Villa Nautica), North Male Atoll</p></div>
-                    <span class="job-date" data-i18n="job4_date">Apr 2022 – Nov 2023</span>
+                    <div><p class="job-title" data-i18n="job4_title">Instructor de Buceo en Resort</p><p class="job-company">Paradise Island (Villa Nautica), North Male Atoll</p></div>
+                    <span class="job-date" data-i18n="job4_date">Abr 2022 – Nov 2023</span>
                 </div>
                 <ul>
-                    <li data-i18n="job4_b1">Delivered premium guest experiences at a 5-star luxury resort, teaching PADI courses and leading reef tours for international clientele</li>
-                    <li data-i18n="job4_b2">Collaborated cross-functionally with resort management, F&B, and activities teams to align service delivery and enhance guest satisfaction</li>
-                    <li data-i18n="job4_b3">Consulted on guest service improvements, contributing to elevated guest experience scores and repeat visitation</li>
-                    <li data-i18n="job4_b4">Developed and delivered the Maldives Reef Guide program, a specialized certification course that enhanced the resort's premium service offering</li>
-                    <li data-i18n="job4_b5">Managed diverse international guests from Europe, Asia, Americas, and Middle East, adapting communication style to cultural preferences</li>
+                    <li data-i18n="job4_b1">Experiencia premium en resort 5* con cursos PADI</li>
+                    <li data-i18n="job4_b2">Colaboración con departamentos del resort</li>
+                    <li data-i18n="job4_b3">Mejora de la experiencia del huésped</li>
+                    <li data-i18n="job4_b4">Programa Guía de Arrecifes de Maldivas</li>
+                    <li data-i18n="job4_b5">Gestión de huéspedes internacionales</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job5_title">Dive Consultant & Supervisor</p><p class="job-company">Alice Maldives, Male</p></div>
-                    <span class="job-date" data-i18n="job5_date">Sep 2020 – Dec 2020</span>
+                    <div><p class="job-title" data-i18n="job5_title">Consultor y Supervisor de Buceo</p><p class="job-company">Alice Maldives, Male</p></div>
+                    <span class="job-date" data-i18n="job5_date">Sep 2020 – Dic 2020</span>
                 </div>
                 <ul>
-                    <li data-i18n="job5_b1">Managed equipment procurement and inventory, overseeing purchasing, assembly, labeling, and quality control for diving operations</li>
-                    <li data-i18n="job5_b2">Handled invoicing and accounting for dive equipment and supplies, maintaining accurate financial records</li>
-                    <li data-i18n="job5_b3">Delivered specialized training (PADI Maldives Reef Guide) to dive professionals, building team capability</li>
-                    <li data-i18n="job5_b4">Conducted educational presentations on marine life (whale sharks, manta rays, corals) for guests and yacht staff</li>
-                    <li data-i18n="job5_b5">Coordinated operations with yacht management and other departments across multiple vessels</li>
-                    <li data-i18n="job5_b6">Operated Coltri compressors, managing air and Nitrox tank filling operations</li>
+                    <li data-i18n="job5_b1">Gestión de adquisición e inventario de equipos</li>
+                    <li data-i18n="job5_b2">Facturación y contabilidad</li>
+                    <li data-i18n="job5_b3">Capacitación en Guía de Arrecifes</li>
+                    <li data-i18n="job5_b4">Presentaciones sobre vida marina</li>
+                    <li data-i18n="job5_b5">Coordinación con gestión de yates</li>
+                    <li data-i18n="job5_b6">Compresores Coltri - llenado de tanques</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job6_title">Dive Manager / Instructor / Sales Rep</p><p class="job-company">Silversands Maldives, Raa Atoll</p></div>
-                    <span class="job-date" data-i18n="job6_date">Feb 2018 – Apr 2020</span>
+                    <div><p class="job-title" data-i18n="job6_title">Gerente de Buceo / Instructor / Ventas</p><p class="job-company">Silversands Maldives, Raa Atoll</p></div>
+                    <span class="job-date" data-i18n="job6_date">Feb 2018 – Abr 2020</span>
                 </div>
                 <ul>
-                    <li data-i18n="job6_b1">Managed dive center operations and team scheduling, optimizing boat and crew allocation for maximum activity capacity</li>
-                    <li data-i18n="job6_b2">Led revenue optimization initiatives, including upselling water sports activities and generating daily revenue reports</li>
-                    <li data-i18n="job6_b3">Drove sales through guest engagement, acting as a personal guide and building rapport to increase participation in paid activities</li>
-                    <li data-i18n="job6_b4">Taught PADI certification courses ranging from beginner to professional levels (Dive Master, Reef Guide)</li>
-                    <li data-i18n="job6_b5">Ensured operational safety, managing air/Nitrox tank fills and maintaining equipment compliance</li>
+                    <li data-i18n="job6_b1">Gestión de operaciones del centro</li>
+                    <li data-i18n="job6_b2">Optimización de ingresos y reportes diarios</li>
+                    <li data-i18n="job6_b3">Ventas a través de engagement con huéspedes</li>
+                    <li data-i18n="job6_b4">Cursos PADI de nivel principiante a profesional</li>
+                    <li data-i18n="job6_b5">Seguridad y cumplimiento operativo</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job7_title">Dive Instructor / Sales Rep</p><p class="job-company">Ocean Group Maldives, South Ari Atoll</p></div>
-                    <span class="job-date" data-i18n="job7_date">Apr 2015 – Feb 2017</span>
+                    <div><p class="job-title" data-i18n="job7_title">Instructor de Buceo / Ventas</p><p class="job-company">Ocean Group Maldives, South Ari Atoll</p></div>
+                    <span class="job-date" data-i18n="job7_date">Abr 2015 – Feb 2017</span>
                 </div>
                 <ul>
-                    <li data-i18n="job7_b1">Led reef tours, whale shark watching expeditions, and research participation activities, creating memorable guest experiences</li>
-                    <li data-i18n="job7_b2">Delivered PADI courses from Discover Scuba Diving to Dive Master certification levels</li>
-                    <li data-i18n="job7_b3">Created value-added services, including filming and editing wedding videos for resort guests, contributing to enhanced guest satisfaction</li>
-                    <li data-i18n="job7_b4">Maintained premium service standards, performing underwater restaurant cleaning to preserve guest dining experience</li>
-                    <li data-i18n="job7_b5">Managed customer relationships, consulting with guests to increase loyalty and repeat bookings</li>
+                    <li data-i18n="job7_b1">Tours de avistamiento de tiburones ballena</li>
+                    <li data-i18n="job7_b2">Cursos PADI (DSD a DiveMaster)</li>
+                    <li data-i18n="job7_b3">Videos de bodas para huéspedes</li>
+                    <li data-i18n="job7_b4">Limpieza de restaurante submarino</li>
+                    <li data-i18n="job7_b5">Relaciones con clientes</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job8_title">Dive Instructor / Sales Rep</p><p class="job-company">Aquaworld, Cancun, Mexico</p></div>
+                    <div><p class="job-title" data-i18n="job8_title">Instructor de Buceo / Ventas</p><p class="job-company">Aquaworld, Cancun, Mexico</p></div>
                     <span class="job-date" data-i18n="job8_date">Oct 2012 – Mar 2015</span>
                 </div>
                 <ul>
-                    <li data-i18n="job8_b1">Consistently achieved <strong>100% sales targets</strong>, earning assignment to premium 5-star hotel accounts including Ritz Carlton Cancun, Grand Park Royal, and Hyatt Zilara</li>
-                    <li data-i18n="job8_b2">Managed sales across <strong>50+ luxury hotels</strong>, representing the company's water sports and tour portfolio</li>
-                    <li data-i18n="job8_b3">Executed dives in Latin America's largest marina, delivering high-quality guest experiences</li>
-                    <li data-i18n="job8_b4">Built lasting client relationships through consultative sales approach, driving repeat business and referrals</li>
-                    <li data-i18n="job8_b5">Represented the company's professional image in high-end hospitality environments</li>
+                    <li data-i18n="job8_b1"><strong>100% de cumplimiento de metas</strong> en hoteles Ritz Carlton, Grand Park Royal, Hyatt Zilara</li>
+                    <li data-i18n="job8_b2">Ventas en <strong>50+ hoteles 5*</strong></li>
+                    <li data-i18n="job8_b3">Buceos en la marina más grande de Latinoamérica</li>
+                    <li data-i18n="job8_b4">Relaciones duraderas con clientes</li>
+                    <li data-i18n="job8_b5">Imagen profesional en hoteles de lujo</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job9_title">English Teacher (Part-time)</p><p class="job-company">Harmon Hall, Cancun, Mexico</p></div>
-                    <span class="job-date" data-i18n="job9_date">Jan 2012 – Feb 2013</span>
+                    <div><p class="job-title" data-i18n="job9_title">Profesor de Inglés (Medio tiempo)</p><p class="job-company">Harmon Hall, Cancun, Mexico</p></div>
+                    <span class="job-date" data-i18n="job9_date">Ene 2012 – Feb 2013</span>
                 </div>
                 <ul>
-                    <li data-i18n="job9_b1">Taught English classes to groups of up to 15 students across multiple proficiency levels</li>
-                    <li data-i18n="job9_b2">Created engaging lesson materials, developing interactive classroom environments for adult learners</li>
-                    <li data-i18n="job9_b3">Conducted motivational pre-calls to students, increasing course continuation rates and student satisfaction</li>
-                    <li data-i18n="job9_b4">Assessed student progress and provided personalized feedback to ensure learning outcomes</li>
+                    <li data-i18n="job9_b1">Clases a grupos de 15 estudiantes</li>
+                    <li data-i18n="job9_b2">Materiales interactivos</li>
+                    <li data-i18n="job9_b3">Llamadas motivacionales</li>
+                    <li data-i18n="job9_b4">Evaluación de progreso</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-header">
-                    <div><p class="job-title" data-i18n="job10_title">Japanese Language Teacher</p><p class="job-company">Herrera Language School, Mexico</p></div>
-                    <span class="job-date" data-i18n="job10_date">Jan 2012 – Jan 2013</span>
+                    <div><p class="job-title" data-i18n="job10_title">Profesor de Japonés</p><p class="job-company">Herrera Language School, Mexico</p></div>
+                    <span class="job-date" data-i18n="job10_date">Ene 2012 – Ene 2013</span>
                 </div>
                 <ul>
-                    <li data-i18n="job10_b1">Taught Japanese language courses, developing lesson plans and preparing students for proficiency examinations</li>
-                    <li data-i18n="job10_b2">Managed classes of up to 15 students, creating interactive learning environments and cultural immersion activities</li>
-                    <li data-i18n="job10_b3">Conducted follow-up consultations with students to monitor progress and maintain engagement</li>
+                    <li data-i18n="job10_b1">Clases de japonés y preparación para exámenes</li>
+                    <li data-i18n="job10_b2">Gestión de clases de 15 estudiantes</li>
+                    <li data-i18n="job10_b3">Seguimiento del progreso</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2 class="section-title" data-i18n="edu_title">Education</h2>
+            <h2 class="section-title" data-i18n="edu_title">Educación</h2>
             
             <div class="edu-item">
                 <div class="job-header">
                     <div>
-                        <p class="job-title" data-i18n="edu1_title">Master's Degree in Management (International Business)</p>
+                        <p class="job-title" data-i18n="edu0_title">Maestría en Ictiología (1er curso)</p>
                         <p class="job-company">Kuban State University (KubSU), Krasnodar</p>
                     </div>
-                    <span class="job-date" data-i18n="edu1_date">Graduated July 15, 2026</span>
+                    <span class="job-date" data-i18n="edu0_date">En curso</span>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="job-header">
+                    <div>
+                        <p class="job-title" data-i18n="edu1_title">Maestría en Gestión (Negocios Internacionales)</p>
+                        <p class="job-company">Kuban State University (KubSU), Krasnodar</p>
+                    </div>
+                    <span class="job-date" data-i18n="edu1_date">Graduado el 15 de julio de 2026</span>
                 </div>
                 <ul>
-                    <li><span data-i18n="edu1_b1">Federal Educational Code:</span> <span class="highlight">38.04.02</span></li>
-                    <li data-i18n="edu1_b2">Graduated with <span class="red-diploma">Honours (Red Diploma / Диплом с отличием)</span></li>
-                    <li data-i18n="edu1_b3">Thesis: "International Business Management in the Mexican Caribbean"</li>
+                    <li><span data-i18n="edu1_b1">Código Educativo Federal:</span> <span class="highlight">38.04.02</span></li>
+                    <li data-i18n="edu1_b2">Graduado con <span class="red-diploma">Honores (Diploma Rojo)</span></li>
+                    <li data-i18n="edu1_b3">Tesis: 'Gestión de Negocios Internacionales en el Caribe Mexicano'</li>
                 </ul>
             </div>
 
             <div class="edu-item">
                 <div class="job-header">
                     <div>
-                        <p class="job-title" data-i18n="edu2_title">Bachelor of Business Administration (BBA)</p>
+                        <p class="job-title" data-i18n="edu2_title">Licenciatura en Administración de Empresas (BBA)</p>
                         <p class="job-company">University of the People</p>
                     </div>
                     <span class="job-date">2023</span>
@@ -304,7 +355,7 @@
         </section>
 
         <section>
-            <h2 class="section-title" data-i18n="certs_title">Certifications & Courses</h2>
+            <h2 class="section-title" data-i18n="certs_title">Certificaciones</h2>
             <ul style="padding-left: 20px; font-size: 13px; columns: 2; column-gap: 20px;">
                 <li data-i18n="cert1">2025: Teaching English to Young Learners</li>
                 <li data-i18n="cert2">2023: NDL Freediving Instructor</li>
@@ -318,8 +369,8 @@
         </section>
 
         <section>
-            <h2 class="section-title" data-i18n="ref_title">References</h2>
-            <p style="font-size: 13px;" data-i18n="ref_desc">Available upon request.</p>
+            <h2 class="section-title" data-i18n="ref_title">Referencias</h2>
+            <p style="font-size: 13px;" data-i18n="ref_desc">Disponibles a solicitud.</p>
         </section>
     </main>
 </div>
@@ -329,12 +380,15 @@
         en: {
             contact_title: "Contact", location: "Krasnodar, Russia", citizenship: "Citizen of Mexico",
             work_auth_title: "Work Authorization", work_auth_desc: "<strong>Residency Permit (ВНЖ):</strong> Eligible for Russian Residency Permit based on Honours Degree. Fully authorized to work in Russia without additional work permits.",
-            languages_title: "Languages", lang_es: "Spanish:", lang_es_level: "Native", lang_en: "English:", lang_en_level: "Proficient", lang_ru: "Russian:", lang_ru_level: "Upper-Int.", lang_ja: "Japanese:", lang_ja_level: "Intermediate",
-            skills_title: "Core Skills", skill1: "International Business & Sales", skill2: "Client Relations & Retention", skill3: "Multilingual Education (E-Learning)", skill4: "Team Leadership & Training", skill5: "Business Correspondence", skill6: "Event & Seminar Organization",
-            driving_title: "Driving License", driving_desc: "Category A (Motorcycles)",
-            name: "Francisco Javier Rodriguez Gaona", target_role: "Client Relations Manager | International Business Professional", target_details: "Expected Salary: 70,000 RUB net | Full-time, Remote/On-site | Open to rare business trips",
-            about_title: "Profile", about_desc: "International business professional with 10+ years of experience in client relations, sales, and operations across Mexico, Maldives, and Russia. Master's in International Business Management (Honours / Red Diploma) from Kuban State University. Proven track record of increasing revenue through strategic sales initiatives and building long-term client relationships in luxury hospitality and tourism sectors. Multilingual communicator (Spanish, English, Russian, Japanese) with strong cross-cultural competence. Fully authorized to work in Russia.",
-            exp_title: "Professional Experience (10 years 11 months)",
+            languages_title: "Languages", lang_es: "Spanish:", lang_es_level: "Native", lang_en: "English:", lang_en_level: "C2", lang_ru: "Russian:", lang_ru_level: "B2", lang_ja: "Japanese:", lang_ja_level: "B1", lang_zh: "Chinese:", lang_zh_level: "Studying",
+            skills_title: "Core Skills", skill1: "International Business & Sales", skill2: "Client Relations & Retention", skill3: "Multilingual Education (E-Learning)", skill4: "Team Leadership & Training", skill5: "Business Correspondence", skill6: "Event & Seminar Organization", skill7: "Influencer Marketing", skill8: "Entrepreneurship & Business Founding",
+            driving_title: "Driving License", driving_desc: "Category A – Cars & Motorcycles (Mexico)",
+            name: "Francisco Javier Rodriguez Gaona", target_role: "Client Relations Manager | International Business | Founder", target_details: "Expected Salary: 70,000 RUB net | Full-time, Remote/On-site | Open to rare business trips",
+            about_title: "Profile", about_desc: "International business professional with 10+ years of experience in client relations, sales, and operations across Mexico, Maldives, and Russia. Founder of Grupo Nexus, an international influencer marketing agency. Master's in International Business Management (Honours / Red Diploma) from Kuban State University, currently pursuing a second Master's in Ichthyology at KUBSU. Proven track record of increasing revenue through strategic sales initiatives and building long-term client relationships in luxury hospitality and tourism sectors. Multilingual communicator (Spanish, English, Russian, Japanese, basic Chinese) with strong cross-cultural competence. Fully authorized to work in Russia.",
+            exp_title: "Professional Experience",
+            job0a_title: "Founder & CEO", job0a_date: "Summer 2025 – Present", job0a_b1: "Founded an international influencer marketing agency with Mexican roots and operational headquarters in Europe", job0a_b2: "Connected global brands with <strong>150+ Hispanic creators</strong> across <strong>12 countries</strong> (USA, Mexico, Colombia, Argentina, Spain)", job0a_b3: "360° solutions: influencer strategy, contract management, metrics & ROI, talent roster (beauty, gaming, lifestyle, technology)", job0a_b4: "Built a private talent network with high real engagement and alignment to brand KPIs",
+            job0b_title: "Diving Instructor", job0b_date: "Summer 2025", job0b_b1: "Taught diving courses and guided dives during the summer season", job0b_b2: "Served international clientele at a Black Sea diving center",
+            job0c_title: "Independent Teacher & Lecturer", job0c_date: "Summer 2025 – Present", job0c_b1: "Independent classes in Spanish, English, and Japanese", job0c_b2: "Taught Mexican culture: history, cuisine, and traditions", job0c_b3: "Gave lectures at KUBSU University",
             job1_title: "English & Spanish Language Teacher", job1_date: "Oct 2025 – Present", job1_b1: "Deliver customized 1-on-1 language training (A2–B2 levels) for adult professionals, focusing on interview preparation, travel, relocation, and business communication", job1_b2: "Develop custom curricula using communicative methodology combined with digital tools (Quizlet, LingQ, Speechling, Netflix-based learning)", job1_b3: "Maintain consistent high ratings (4.9–5.0) through personalized instruction and responsive teaching approach", job1_b4: "Provide flexible scheduling options (online/offline) to accommodate diverse student needs",
             job2_title: "English Teacher & Methodologist", job2_date: "Sep 2024 – Sep 2025", job2_b1: "Developed and delivered comprehensive English language programs for preschool children", job2_b2: "Created lesson plans, educational materials, and interactive/gamified learning activities", job2_b3: "Organized thematic events to engage young learners and enhance language acquisition", job2_b4: "Tracked student progress and communicated development with parents", job2_b5: "Established assessment criteria to measure learning outcomes", job2_b6: "Participated in educational quality monitoring and curriculum improvement initiatives",
             job3_title: "Diving Center Manager / Instructor", job3_date: "Jun 2024 – Aug 2025", job3_b1: "Managed daily center operations, coordinating a team of instructors and support staff to ensure high-quality client service delivery", job3_b2: "Developed and implemented a sales referral system with the sales team, increasing service revenue by <strong>20% within 3 months</strong> (peak summer season)", job3_b3: "Established B2B partnerships with local hotels, expanding client acquisition channels and building a recurring revenue stream", job3_b4: "Consulted clients on equipment selection and course progression, achieving high customer satisfaction and repeat bookings", job3_b5: "Oversaw equipment inventory, maintenance schedules, and safety compliance",
@@ -345,7 +399,9 @@
             job8_title: "Dive Instructor / Sales Rep", job8_date: "Oct 2012 – Mar 2015", job8_b1: "Consistently achieved <strong>100% sales targets</strong>, earning assignment to premium 5-star hotel accounts including Ritz Carlton Cancun, Grand Park Royal, and Hyatt Zilara", job8_b2: "Managed sales across <strong>50+ luxury hotels</strong>, representing the company's water sports and tour portfolio", job8_b3: "Executed dives in Latin America's largest marina, delivering high-quality guest experiences", job8_b4: "Built lasting client relationships through consultative sales approach, driving repeat business and referrals", job8_b5: "Represented the company's professional image in high-end hospitality environments",
             job9_title: "English Teacher (Part-time)", job9_date: "Jan 2012 – Feb 2013", job9_b1: "Taught English classes to groups of up to 15 students across multiple proficiency levels", job9_b2: "Created engaging lesson materials, developing interactive classroom environments for adult learners", job9_b3: "Conducted motivational pre-calls to students, increasing course continuation rates and student satisfaction", job9_b4: "Assessed student progress and provided personalized feedback to ensure learning outcomes",
             job10_title: "Japanese Language Teacher", job10_date: "Jan 2012 – Jan 2013", job10_b1: "Taught Japanese language courses, developing lesson plans and preparing students for proficiency examinations", job10_b2: "Managed classes of up to 15 students, creating interactive learning environments and cultural immersion activities", job10_b3: "Conducted follow-up consultations with students to monitor progress and maintain engagement",
-            edu_title: "Education", edu1_title: "Master's Degree in Management (International Business)", edu1_date: "Graduated July 15, 2026", edu1_b1: "Federal Educational Code:", edu1_b2: "Graduated with <span class='red-diploma'>Honours (Red Diploma / Диплом с отличием)</span>", edu1_b3: "Thesis: 'International Business Management in the Mexican Caribbean'",
+            edu_title: "Education",
+            edu0_title: "Master's in Ichthyology (1st year)", edu0_date: "In progress",
+            edu1_title: "Master's Degree in Management (International Business)", edu1_date: "Graduated July 15, 2026", edu1_b1: "Federal Educational Code:", edu1_b2: "Graduated with <span class='red-diploma'>Honours (Red Diploma / Диплом с отличием)</span>", edu1_b3: "Thesis: 'International Business Management in the Mexican Caribbean'",
             edu2_title: "Bachelor of Business Administration (BBA)",
             certs_title: "Certifications & Courses", cert1: "2025: Teaching English to Young Learners", cert2: "2023: NDL Freediving Instructor", cert3: "2022: TEFL / TESOL (World TESOL Academy)", cert4: "2021: English Teaching (TEFL/TESOL)", cert5: "2017: Commercial Diver (Norwegian School)", cert6: "2017: DAN First Aid, AED, Neuro Assessment, Oxygen, BLS, IMCA Surface Supplied Diver", cert7: "2014: DAN/EFR/ERDI First Aid Instructor", cert8: "2013: PADI/SDI/NDL Dive Instructor",
             ref_title: "References", ref_desc: "Available upon request."
@@ -353,12 +409,15 @@
         ru: {
             contact_title: "Контакты", location: "Краснодар, Россия", citizenship: "Гражданство: Мексика",
             work_auth_title: "Правовой статус", work_auth_desc: "<strong>ВНЖ:</strong> Имею право на получение ВНЖ на основании диплома с отличием. Полностью авторизован для работы в РФ без дополнительных разрешений.",
-            languages_title: "Языки", lang_es: "Испанский:", lang_es_level: "Родной", lang_en: "Английский:", lang_en_level: "C2", lang_ru: "Русский:", lang_ru_level: "B2", lang_ja: "Японский:", lang_ja_level: "B1",
-            skills_title: "Ключевые навыки", skill1: "Международный бизнес и продажи", skill2: "Клиентский сервис и удержание", skill3: "Многоязычное образование (E-Learning)", skill4: "Руководство командой и обучение", skill5: "Деловая переписка", skill6: "Организация мероприятий",
-            driving_title: "Водительские права", driving_desc: "Категория А",
-            name: "Франсиско Хавьер Родригес Гаона", target_role: "Менеджер по работе с клиентами | Международный бизнес", target_details: "Зарплата: 70 000 руб. на руки | Полная занятость | Готов к редким командировкам",
-            about_title: "Обо мне", about_desc: "Профессионал международного бизнеса с 10+ годами опыта в клиентских отношениях, продажах и операционной деятельности в Мексике, Мальдивах и России. Магистр менеджмента (Международный бизнес) с отличием Кубанского государственного университета. Подтвержденный опыт увеличения доходов через стратегические инициативы. Свободно владеет 4 языками. Полностью авторизован для работы в России.",
-            exp_title: "Опыт работы (10 лет 11 месяцев)",
+            languages_title: "Языки", lang_es: "Испанский:", lang_es_level: "Родной", lang_en: "Английский:", lang_en_level: "C2", lang_ru: "Русский:", lang_ru_level: "B2", lang_ja: "Японский:", lang_ja_level: "B1", lang_zh: "Китайский:", lang_zh_level: "Изучаю",
+            skills_title: "Ключевые навыки", skill1: "Международный бизнес и продажи", skill2: "Клиентский сервис и удержание", skill3: "Многоязычное образование (E-Learning)", skill4: "Руководство командой и обучение", skill5: "Деловая переписка", skill6: "Организация мероприятий", skill7: "Инфлюенс-маркетинг", skill8: "Предпринимательство и основание компаний",
+            driving_title: "Водительские права", driving_desc: "Категория A – Автомобили и мотоциклы (Мексика)",
+            name: "Франсиско Хавьер Родригес Гаона", target_role: "Менеджер по работе с клиентами | Международный бизнес | Основатель", target_details: "Зарплата: 70 000 руб. на руки | Полная занятость | Готов к редким командировкам",
+            about_title: "Обо мне", about_desc: "Профессионал международного бизнеса с 10+ годами опыта в клиентских отношениях, продажах и операционной деятельности в Мексике, Мальдивах и России. Основатель Grupo Nexus — международного агентства инфлюенс-маркетинга. Магистр менеджмента (Международный бизнес) с отличием Кубанского государственного университета, в настоящее время получаю второе магистерское образование по ихтиологии в КубГУ. Подтвержденный опыт увеличения доходов через стратегические инициативы. Свободно владеет 4 языками. Полностью авторизован для работы в России.",
+            exp_title: "Опыт работы",
+            job0a_title: "Основатель и CEO", job0a_date: "Лето 2025 – настоящее время", job0a_b1: "Основал международное агентство инфлюенс-маркетинга с мексиканскими корнями и операционным офисом в Европе", job0a_b2: "Связал глобальные бренды с <strong>150+ испаноязычными создателями</strong> в <strong>12 странах</strong> (США, Мексика, Колумбия, Аргентина, Испания)", job0a_b3: "Решения 360°: стратегия инфлюенсеров, управление контрактами, метрики и ROI, база талантов (красота, игры, лайфстайл, технологии)", job0a_b4: "Построил приватную сеть талантов с высоким реальным вовлечением и соответствием KPI брендов",
+            job0b_title: "Инструктор по дайвингу", job0b_date: "Лето 2025", job0b_b1: "Преподавание курсов дайвинга и проведение погружений в летний сезон", job0b_b2: "Обслуживание международных клиентов в дайв-центре на Черном море",
+            job0c_title: "Независимый преподаватель и лектор", job0c_date: "Лето 2025 – настоящее время", job0c_b1: "Частные уроки испанского, английского и японского языков", job0c_b2: "Преподавание мексиканской культуры: история, кухня и традиции", job0c_b3: "Лекции в Кубанском государственном университете (КубГУ)",
             job1_title: "Преподаватель английского и испанского", job1_date: "Окт 2025 – Настоящее время", job1_b1: "Индивидуальное обучение взрослых (A2–B2): подготовка к собеседованиям, переезд, бизнес-коммуникация", job1_b2: "Авторские учебные планы с использованием онлайн-инструментов (Quizlet, LingQ)", job1_b3: "Стабильно высокие оценки (4.9–5.0) благодаря персонализированному подходу", job1_b4: "Гибкий график занятий (онлайн/офлайн)",
             job2_title: "Учитель английского и методист", job2_date: "Сен 2024 – Сен 2025", job2_b1: "Разработка комплексных программ для дошкольников", job2_b2: "Создание материалов и интерактивных занятий", job2_b3: "Организация мероприятий для повышения интереса", job2_b4: "Отслеживание прогресса и обратная связь с родителями", job2_b5: "Разработка критериев оценки", job2_b6: "Участие в контроле качества и развитии программ",
             job3_title: "Управляющий дайвинг-центром / Инструктор", job3_date: "Июн 2024 – Авг 2025", job3_b1: "Управление ежедневными операциями центра, координация команды", job3_b2: "Разработал систему рекомендаций, увеличив доход на <strong>20% за 3 месяца</strong>", job3_b3: "Партнерство с отелями для расширения клиентской базы", job3_b4: "Консультирование клиентов для повышения лояльности", job3_b5: "Контроль оборудования и соблюдение стандартов безопасности",
@@ -369,7 +428,9 @@
             job8_title: "Инструктор по дайвингу / Торговый представитель", job8_date: "Окт 2012 – Мар 2015", job8_b1: "<strong>100% выполнение плана продаж</strong> в отелях Ritz Carlton, Grand Park Royal, Hyatt Zilara", job8_b2: "Продажи в <strong>50+ отелях 5*</strong>", job8_b3: "Погружения в крупнейшей марине Латинской Америки", job8_b4: "Построение долгосрочных отношений с клиентами", job8_b5: "Представление компании в элитных отелях",
             job9_title: "Преподаватель английского (Part-time)", job9_date: "Янв 2012 – Фев 2013", job9_b1: "Обучение групп до 15 человек", job9_b2: "Разработка интерактивных материалов", job9_b3: "Мотивационные звонки студентам", job9_b4: "Оценка прогресса и обратная связь",
             job10_title: "Преподаватель японского", job10_date: "Янв 2012 – Янв 2013", job10_b1: "Обучение японскому и подготовка к экзаменам", job10_b2: "Управление классами до 15 студентов", job10_b3: "Консультации по прогрессу студентов",
-            edu_title: "Образование", edu1_title: "Магистр менеджмента (Международный бизнес)", edu1_date: "Получен 15 июля 2026", edu1_b1: "Код ФГОС:", edu1_b2: "Получен <span class='red-diploma'>Диплом с отличием (Красный диплом)</span>", edu1_b3: "Тема диссертации: 'Управление международным бизнесом в Мексиканском Карибском бассейне'",
+            edu_title: "Образование",
+            edu0_title: "Магистратура по ихтиологии (1 курс)", edu0_date: "В процессе",
+            edu1_title: "Магистр менеджмента (Международный бизнес)", edu1_date: "Получен 15 июля 2026", edu1_b1: "Код ФГОС:", edu1_b2: "Получен <span class='red-diploma'>Диплом с отличием (Красный диплом)</span>", edu1_b3: "Тема диссертации: 'Управление международным бизнесом в Мексиканском Карибском бассейне'",
             edu2_title: "Бакалавр делового администрирования (BBA)",
             certs_title: "Сертификаты и курсы", cert1: "2025: Teaching English to Young Learners", cert2: "2023: NDL Инструктор по фридайвингу", cert3: "2022: TEFL / TESOL (World TESOL Academy)", cert4: "2021: English Teaching (TEFL/TESOL)", cert5: "2017: Commercial Diver (Norwegian School)", cert6: "2017: DAN First Aid, AED, Neuro Assessment, Oxygen, BLS, IMCA Surface Supplied Diver", cert7: "2014: DAN/EFR/ERDI First Aid Instructor", cert8: "2013: PADI/SDI/NDL Dive Instructor",
             ref_title: "Рекомендации", ref_desc: "Предоставляются по запросу."
@@ -377,12 +438,15 @@
         es: {
             contact_title: "Contacto", location: "Krasnodar, Rusia", citizenship: "Ciudadano de México",
             work_auth_title: "Autorización de Trabajo", work_auth_desc: "<strong>Permiso de Residencia (ВНЖ):</strong> Elegible para el Permiso de Residencia Ruso basado en el Título de Honor. Totalmente autorizado para trabajar en Rusia sin permisos adicionales.",
-            languages_title: "Idiomas", lang_es: "Español:", lang_es_level: "Nativo", lang_en: "Inglés:", lang_en_level: "C2", lang_ru: "Ruso:", lang_ru_level: "B2", lang_ja: "Japonés:", lang_ja_level: "B1",
-            skills_title: "Habilidades Clave", skill1: "Negocios Internacionales y Ventas", skill2: "Relaciones con Clientes", skill3: "Educación Multilingüe (E-Learning)", skill4: "Liderazgo y Formación de Equipos", skill5: "Correspondencia Comercial", skill6: "Organización de Eventos",
-            driving_title: "Licencia de Conducir", driving_desc: "Categoría A (Motocicletas)",
-            name: "Francisco Javier Rodriguez Gaona", target_role: "Gerente de Relación con Clientes | Negocios Internacionales", target_details: "Salario esperado: 70,000 RUB neto | Tiempo completo | Disponible para viajes raros",
-            about_title: "Perfil", about_desc: "Profesional de negocios internacionales con 10+ años de experiencia en relaciones con clientes, ventas y operaciones en México, Maldivas y Rusia. Maestría en Gestión (Negocios Internacionales) con Honores de la Universidad Estatal de Kuban. Historial comprobado de aumento de ingresos a través de iniciativas estratégicas. Comunicador multilingüe (Español, Inglés, Ruso, Japonés). Totalmente autorizado para trabajar en Rusia.",
-            exp_title: "Experiencia Profesional (10 años 11 meses)",
+            languages_title: "Idiomas", lang_es: "Español:", lang_es_level: "Nativo", lang_en: "Inglés:", lang_en_level: "C2", lang_ru: "Ruso:", lang_ru_level: "B2", lang_ja: "Japonés:", lang_ja_level: "B1", lang_zh: "Chino:", lang_zh_level: "En estudio",
+            skills_title: "Habilidades Clave", skill1: "Negocios Internacionales y Ventas", skill2: "Relaciones con Clientes", skill3: "Educación Multilingüe (E-Learning)", skill4: "Liderazgo y Formación de Equipos", skill5: "Correspondencia Comercial", skill6: "Organización de Eventos", skill7: "Marketing de Influencia", skill8: "Emprendimiento y Fundación de Empresas",
+            driving_title: "Licencia de Conducir", driving_desc: "Categoría A – Automóviles y Motocicletas (México)",
+            name: "Francisco Javier Rodriguez Gaona", target_role: "Gerente de Relación con Clientes | Negocios Internacionales | Fundador", target_details: "Salario esperado: 70,000 RUB neto | Tiempo completo | Disponible para viajes raros",
+            about_title: "Perfil", about_desc: "Profesional de negocios internacionales con 10+ años de experiencia en relaciones con clientes, ventas y operaciones en México, Maldivas y Rusia. Fundador de Grupo Nexus, agencia internacional de marketing de influencia. Maestría en Gestión (Negocios Internacionales) con Honores de la Universidad Estatal de Kuban, actualmente cursando una segunda Maestría en Ictiología en KUBSU. Historial comprobado de aumento de ingresos a través de iniciativas estratégicas. Comunicador multilingüe (Español, Inglés, Ruso, Japonés, Chino básico). Totalmente autorizado para trabajar en Rusia.",
+            exp_title: "Experiencia Profesional",
+            job0a_title: "Fundador & CEO", job0a_date: "Verano 2025 – Presente", job0a_b1: "Fundación de agencia internacional de marketing de influencia con raíces mexicanas y sede operativa en Europa", job0a_b2: "Conexión de marcas globales con <strong>+150 creadores hispanohablantes</strong> en <strong>12 países</strong> (USA, México, Colombia, Argentina, España)", job0a_b3: "Soluciones 360°: estrategia de influencers, gestión de contratos, métricas & ROI, roster de talento (belleza, gaming, lifestyle, tecnología)", job0a_b4: "Construcción de red privada de talento con alto engagement real y alineación a KPIs de marca",
+            job0b_title: "Instructor de Buceo", job0b_date: "Verano 2025", job0b_b1: "Enseñanza de cursos de buceo y guía de inmersiones durante la temporada de verano", job0b_b2: "Atención a clientes internacionales en centro de buceo del Mar Negro",
+            job0c_title: "Docente Independiente & Conferencista", job0c_date: "Verano 2025 – Presente", job0c_b1: "Clases independientes de español, inglés y japonés", job0c_b2: "Enseñanza de cultura mexicana: historia, cocina y tradiciones", job0c_b3: "Conferencias en la Universidad KUBSU",
             job1_title: "Profesor de Inglés y Español", job1_date: "Oct 2025 – Presente", job1_b1: "Entrenamiento 1 a 1 personalizado (A2–B2) para adultos: entrevistas, viajes, negocios", job1_b2: "Planes de estudio con herramientas online (Quizlet, LingQ)", job1_b3: "Calificaciones consistentes de 4.9–5.0", job1_b4: "Horarios flexibles (online/offline)",
             job2_title: "Profesor de Inglés y Metodólogo", job2_date: "Sep 2024 – Sep 2025", job2_b1: "Programas integrales de inglés para preescolares", job2_b2: "Materiales educativos y actividades interactivas", job2_b3: "Eventos temáticos para fomentar el aprendizaje", job2_b4: "Seguimiento del progreso con padres", job2_b5: "Criterios de evaluación", job2_b6: "Participación en monitoreo de calidad",
             job3_title: "Gerente de Centro de Buceo / Instructor", job3_date: "Jun 2024 – Ago 2025", job3_b1: "Gestión de operaciones diarias del centro", job3_b2: "Sistema de referencias que aumentó ingresos <strong>20% en 3 meses</strong>", job3_b3: "Alianzas B2B con hoteles locales", job3_b4: "Asesoramiento a clientes y retención", job3_b5: "Control de inventario y cumplimiento de seguridad",
@@ -393,7 +457,9 @@
             job8_title: "Instructor de Buceo / Ventas", job8_date: "Oct 2012 – Mar 2015", job8_b1: "<strong>100% de cumplimiento de metas</strong> en hoteles Ritz Carlton, Grand Park Royal, Hyatt Zilara", job8_b2: "Ventas en <strong>50+ hoteles 5*</strong>", job8_b3: "Buceos en la marina más grande de Latinoamérica", job8_b4: "Relaciones duraderas con clientes", job8_b5: "Imagen profesional en hoteles de lujo",
             job9_title: "Profesor de Inglés (Medio tiempo)", job9_date: "Ene 2012 – Feb 2013", job9_b1: "Clases a grupos de 15 estudiantes", job9_b2: "Materiales interactivos", job9_b3: "Llamadas motivacionales", job9_b4: "Evaluación de progreso",
             job10_title: "Profesor de Japonés", job10_date: "Ene 2012 – Ene 2013", job10_b1: "Clases de japonés y preparación para exámenes", job10_b2: "Gestión de clases de 15 estudiantes", job10_b3: "Seguimiento del progreso",
-            edu_title: "Educación", edu1_title: "Maestría en Gestión (Negocios Internacionales)", edu1_date: "Graduado el 15 de julio de 2026", edu1_b1: "Código Educativo Federal:", edu1_b2: "Graduado con <span class='red-diploma'>Honores (Diploma Rojo)</span>", edu1_b3: "Tesis: 'Gestión de Negocios Internacionales en el Caribe Mexicano'",
+            edu_title: "Educación",
+            edu0_title: "Maestría en Ictiología (1er curso)", edu0_date: "En curso",
+            edu1_title: "Maestría en Gestión (Negocios Internacionales)", edu1_date: "Graduado el 15 de julio de 2026", edu1_b1: "Código Educativo Federal:", edu1_b2: "Graduado con <span class='red-diploma'>Honores (Diploma Rojo)</span>", edu1_b3: "Tesis: 'Gestión de Negocios Internacionales en el Caribe Mexicano'",
             edu2_title: "Licenciatura en Administración de Empresas (BBA)",
             certs_title: "Certificaciones", cert1: "2025: Teaching English to Young Learners", cert2: "2023: NDL Freediving Instructor", cert3: "2022: TEFL / TESOL (World TESOL Academy)", cert4: "2021: English Teaching (TEFL/TESOL)", cert5: "2017: Commercial Diver (Norwegian School)", cert6: "2017: DAN First Aid, AED, Neuro Assessment, Oxygen, BLS, IMCA Surface Supplied Diver", cert7: "2014: DAN/EFR/ERDI First Aid Instructor", cert8: "2013: PADI/SDI/NDL Dive Instructor",
             ref_title: "Referencias", ref_desc: "Disponibles a solicitud."
@@ -401,12 +467,15 @@
         ja: {
             contact_title: "連絡先", location: "クラスノダール、ロシア", citizenship: "国籍：メキシコ",
             work_auth_title: "就労資格", work_auth_desc: "<strong>居住許可（ВНЖ）：</strong>優等学位に基づくロシア連邦居住許可の取得資格あり。追加の就労許可なしでロシアでの就労が完全に許可されています。",
-            languages_title: "言語", lang_es: "スペイン語:", lang_es_level: "ネイティブ", lang_en: "英語:", lang_en_level: "C2", lang_ru: "ロシア語:", lang_ru_level: "B2", lang_ja: "日本語:", lang_ja_level: "B1",
-            skills_title: "スキル", skill1: "国際ビジネス・営業", skill2: "顧客関係管理・維持", skill3: "多言語教育（Eラーニング）", skill4: "チームリーダーシップ・研修", skill5: "ビジネス通信", skill6: "イベント・セミナー企画",
-            driving_title: "運転免許", driving_desc: "Aカテゴリ（オートバイ）",
-            name: "フランシスコ・ハビエル・ロドリゲス・ガオナ", target_role: "顧客関係マネージャー | 国際ビジネス専門家", target_details: "希望給与：70,000 RUB（手取り） | 正社員 | 稀な出張に対応可能",
-            about_title: "プロフィール", about_desc: "メキシコ、モルディブ、ロシアで10年以上の顧客関係、営業、運営経験を持つ国際ビジネス専門家。クバン州立大学で国際ビジネス経営学修士（優等学位）を取得。戦略的イニシアチブによる収益向上の実績。4言語に堪能。ロシアでの就労が完全に許可されています。",
-            exp_title: "職歴（10年11ヶ月）",
+            languages_title: "言語", lang_es: "スペイン語:", lang_es_level: "ネイティブ", lang_en: "英語:", lang_en_level: "C2", lang_ru: "ロシア語:", lang_ru_level: "B2", lang_ja: "日本語:", lang_ja_level: "B1", lang_zh: "中国語:", lang_zh_level: "学習中",
+            skills_title: "スキル", skill1: "国際ビジネス・営業", skill2: "顧客関係管理・維持", skill3: "多言語教育（Eラーニング）", skill4: "チームリーダーシップ・研修", skill5: "ビジネス通信", skill6: "イベント・セミナー企画", skill7: "インフルエンサーマーケティング", skill8: "起業・会社設立",
+            driving_title: "運転免許", driving_desc: "Aカテゴリ – 自動車とオートバイ（メキシコ）",
+            name: "フランシスコ・ハビエル・ロドリゲス・ガオナ", target_role: "顧客関係マネージャー | 国際ビジネス | 創業者", target_details: "希望給与：70,000 RUB（手取り） | 正社員 | 稀な出張に対応可能",
+            about_title: "プロフィール", about_desc: "メキシコ、モルディブ、ロシアで10年以上の顧客関係、営業、運営経験を持つ国際ビジネス専門家。Grupo Nexus（国際インフルエンサーマーケティング代理店）の創業者。クバン州立大学で国際ビジネス経営学修士（優等学位）を取得し、現在KUBSUで魚類学の修士課程を履修中。戦略的イニシアチブによる収益向上の実績。5言語に堪能（スペイン語、英語、ロシア語、日本語、中国語基礎）。ロシアでの就労が完全に許可されています。",
+            exp_title: "職歴",
+            job0a_title: "創業者 & CEO", job0a_date: "2025年夏 – 現在", job0a_b1: "メキシコにルーツを持ち、ヨーロッパに拠点を置く国際インフルエンサーマーケティング代理店を設立", job0a_b2: "<strong>12カ国</strong>（米国、メキシコ、コロンビア、アルゼンチン、スペイン）の<strong>150人以上のヒスパニック系クリエイター</strong>とグローバルブランドを結びつけ", job0a_b3: "360°ソリューション：インフルエンサー戦略、契約管理、メトリクス＆ROI、タレント名簿（ビューティー、ゲーム、ライフスタイル、テクノロジー）", job0a_b4: "高い実エンゲージメントとブランドKPIに沿ったプライベートタレントネットワークを構築",
+            job0b_title: "ダイビングインストラクター", job0b_date: "2025年夏", job0b_b1: "夏季シーズン中のダイビングコースの指導とダイブガイド", job0b_b2: "黒海のダイビングセンターで国際的な顧客に対応",
+            job0c_title: "独立講師 & レクチャラー", job0c_date: "2025年夏 – 現在", job0c_b1: "スペイン語、英語、日本語の独立クラス", job0c_b2: "メキシコ文化（歴史、料理、伝統）の指導", job0c_b3: "KUBSU大学での講演",
             job1_title: "英語・スペイン語教師", job1_date: "2025年10月 – 現在", job1_b1: "成人向けカスタマイズ1対1トレーニング（A2–B2）：面接、旅行、ビジネス", job1_b2: "オンラインツールを使用したカリキュラム開発（Quizlet, LingQ）", job1_b3: "一貫した高評価（4.9–5.0）", job1_b4: "柔軟なスケジュール（オンライン/オフライン）",
             job2_title: "英語教師・メソドロジスト", job2_date: "2024年9月 – 2025年9月", job2_b1: "未就学児向け包括的英語プログラム", job2_b2: "教材・インタラクティブ活動の作成", job2_b3: "テーマ別イベントの開催", job2_b4: "進捗管理と保護者連絡", job2_b5: "評価基準の確立", job2_b6: "教育品質モニタリングへの参加",
             job3_title: "ダイビングセンターマネージャー / インストラクター", job3_date: "2024年6月 – 2025年8月", job3_b1: "センター運営とチーム調整", job3_b2: "紹介システム導入により<strong>3ヶ月で20%</strong>収益増加", job3_b3: "ホテルとのB2Bパートナーシップ構築", job3_b4: "顧客コンサルティングとリピート促進", job3_b5: "在庫管理と安全コンプライアンス",
@@ -417,25 +486,63 @@
             job8_title: "ダイブインストラクター / 営業", job8_date: "2012年10月 – 2015年3月", job8_b1: "<strong>売上目標100%達成</strong>（Ritz Carlton、Grand Park Royal、Hyatt Zilara）", job8_b2: "<strong>50以上の5つ星ホテル</strong>で営業", job8_b3: "ラテンアメリカ最大のマリーナでダイビング", job8_b4: "長期的な顧客関係構築", job8_b5: "高級ホテルでのプロフェッショナルな対応",
             job9_title: "英語教師（パートタイム）", job9_date: "2012年1月 – 2013年2月", job9_b1: "15人までのグループ授業", job9_b2: "インタラクティブ教材作成", job9_b3: "モチベーション向上のための事前コール", job9_b4: "進捗評価",
             job10_title: "日本語教師", job10_date: "2012年1月 – 2013年1月", job10_b1: "日本語指導と試験対策", job10_b2: "15人のクラス運営", job10_b3: "進捗フォローアップ",
-            edu_title: "学歴", edu1_title: "経営学修士（国際ビジネス）", edu1_date: "2026年7月15日 卒業", edu1_b1: "連邦教育コード:", edu1_b2: "<span class='red-diploma'>優等学位（レッドディプロマ）</span>にて卒業", edu1_b3: "論文：「メキシコ・カリブ海における国際ビジネス経営」",
+            edu_title: "学歴",
+            edu0_title: "魚類学修士（1年次）", edu0_date: "在学中",
+            edu1_title: "経営学修士（国際ビジネス）", edu1_date: "2026年7月15日 卒業", edu1_b1: "連邦教育コード:", edu1_b2: "<span class='red-diploma'>優等学位（レッドディプロマ）</span>にて卒業", edu1_b3: "論文：「メキシコ・カリブ海における国際ビジネス経営」",
             edu2_title: "経営学学士（BBA）",
             certs_title: "資格・コース", cert1: "2025: Teaching English to Young Learners", cert2: "2023: NDL フリーダイビングインストラクター", cert3: "2022: TEFL / TESOL (World TESOL Academy)", cert4: "2021: English Teaching (TEFL/TESOL)", cert5: "2017: Commercial Diver (Norwegian School)", cert6: "2017: DAN First Aid, AED, Neuro Assessment, Oxygen, BLS, IMCA Surface Supplied Diver", cert7: "2014: DAN/EFR/ERDI First Aid Instructor", cert8: "2013: PADI/SDI/NDL Dive Instructor",
             ref_title: "推薦者", ref_desc: "ご請求に応じて提供いたします。"
+        },
+        zh: {
+            contact_title: "联系方式", location: "俄罗斯克拉斯诺达尔", citizenship: "国籍：墨西哥",
+            work_auth_title: "工作许可", work_auth_desc: "<strong>居留许可（ВНЖ）：</strong>基于优等学位有资格申请俄罗斯居留许可。完全授权在俄罗斯工作，无需额外工作许可。",
+            languages_title: "语言", lang_es: "西班牙语:", lang_es_level: "母语", lang_en: "英语:", lang_en_level: "C2", lang_ru: "俄语:", lang_ru_level: "B2", lang_ja: "日语:", lang_ja_level: "B1", lang_zh: "中文:", lang_zh_level: "学习中",
+            skills_title: "核心技能", skill1: "国际商务与销售", skill2: "客户关系与维护", skill3: "多语言教育（在线学习）", skill4: "团队领导与培训", skill5: "商务函件", skill6: "活动与研讨会组织", skill7: "网红营销", skill8: "创业与公司创立",
+            driving_title: "驾照", driving_desc: "A类 – 汽车与摩托车（墨西哥）",
+            name: "Francisco Javier Rodriguez Gaona", target_role: "客户关系经理 | 国际商务 | 创始人", target_details: "期望薪资：70,000 RUB（净额）| 全职 | 可接受少量出差",
+            about_title: "职业简介", about_desc: "国际商务专业人士，在墨西哥、马尔代夫和俄罗斯拥有10年以上客户关系、销售和运营经验。Grupo Nexus（国际网红营销机构）创始人。库班国立大学国际商务管理硕士（优等学位/红本毕业证），目前在KUBSU攻读鱼类学第二个硕士学位。拥有通过战略举措提升收入的可靠记录。多语言沟通者（西班牙语、英语、俄语、日语、中文基础），具备强大的跨文化能力。完全授权在俄罗斯工作。",
+            exp_title: "工作经历",
+            job0a_title: "创始人 & CEO", job0a_date: "2025年夏 – 至今", job0a_b1: "创立具有墨西哥根源、运营总部位于欧洲的国际网红营销机构", job0a_b2: "将全球品牌与<strong>12个国家</strong>（美国、墨西哥、哥伦比亚、阿根廷、西班牙）的<strong>150多位西语创作者</strong>连接起来", job0a_b3: "360°解决方案：网红策略、合同管理、指标与ROI、人才库（美妆、游戏、生活方式、科技）", job0a_b4: "建立具有高真实互动率并与品牌KPI对齐的私密人才网络",
+            job0b_title: "潜水教练", job0b_date: "2025年夏", job0b_b1: "夏季期间教授潜水课程并担任潜水向导", job0b_b2: "在黑海潜水中心为国际客户提供服务",
+            job0c_title: "独立教师 & 讲师", job0c_date: "2025年夏 – 至今", job0c_b1: "西班牙语、英语和日语的独立课程", job0c_b2: "教授墨西哥文化：历史、美食和传统", job0c_b3: "在KUBSU大学举办讲座",
+            job1_title: "英语 & 西班牙语教师", job1_date: "2025年10月 – 至今", job1_b1: "为成人专业人士提供定制1对1语言培训（A2–B2级别），专注于面试准备、旅行、搬迁和商务沟通", job1_b2: "使用交际教学法结合数字工具（Quizlet、LingQ、Speechling、Netflix学习）开发定制课程", job1_b3: "通过个性化教学和响应式教学方式保持稳定高评分（4.9–5.0）", job1_b4: "提供灵活的课程安排（在线/线下）以满足不同学生需求",
+            job2_title: "英语教师 & 教学法专家", job2_date: "2024年9月 – 2025年9月", job2_b1: "为学龄前儿童开发和实施全面的英语语言课程", job2_b2: "创建教案、教材和互动/游戏化学习活动", job2_b3: "组织主题活动以吸引幼儿并促进语言习得", job2_b4: "跟踪学生进度并与家长沟通发展情况", job2_b5: "建立评估标准以衡量学习成果", job2_b6: "参与教育质量监测和课程改进计划",
+            job3_title: "潜水中心经理 / 教练", job3_date: "2024年6月 – 2025年8月", job3_b1: "管理中心日常运营，协调教练和支持人员团队，确保高质量客户服务", job3_b2: "与销售团队制定并实施销售推荐系统，使服务收入<strong>3个月内增长20%</strong>（夏季高峰期）", job3_b3: "与当地酒店建立B2B合作伙伴关系，扩展客户获取渠道并建立经常性收入来源", job3_b4: "就设备选择和课程进展为客户提供咨询，实现高客户满意度和重复预订", job3_b5: "监督设备库存、维护计划和安全合规",
+            job4_title: "度假村潜水教练", job4_date: "2022年4月 – 2023年11月", job4_b1: "在五星级豪华度假村提供优质客户体验，教授PADI课程并为国际客户提供礁石之旅", job4_b2: "与度假村管理层、餐饮和活动团队跨职能合作，协调服务交付并提升客户满意度", job4_b3: "就客户服务改进提供咨询，助力提升客户体验评分和重复到访", job4_b4: "开发和实施马尔代夫礁石向导项目，这是一个专业认证课程，增强了度假村的高端服务", job4_b5: "管理来自欧洲、亚洲、美洲和中东的不同国际客人，根据文化偏好调整沟通方式",
+            job5_title: "潜水顾问 & 主管", job5_date: "2020年9月 – 2020年12月", job5_b1: "管理设备采购和库存，监督潜水运营的采购、组装、标签和质量控制", job5_b2: "处理潜水设备和用品的发票和会计，保持准确的财务记录", job5_b3: "为潜水专业人员提供专业培训（PADI马尔代夫礁石向导），提升团队能力", job5_b4: "为客人和游艇工作人员举办海洋生物（鲸鲨、蝠鲼、珊瑚）教育讲座", job5_b5: "与游艇管理层和其他部门协调多艘船只的运营", job5_b6: "操作Coltri压缩机，管理空气和高氧罐充装操作",
+            job6_title: "潜水经理 / 教练 / 销售代表", job6_date: "2018年2月 – 2020年4月", job6_b1: "管理潜水中心运营和团队排班，优化船只和船员分配以实现最大活动容量", job6_b2: "主导收入优化举措，包括水上运动活动追加销售和每日收入报告", job6_b3: "通过客户互动推动销售，充当私人向导并建立融洽关系以增加付费活动参与", job6_b4: "教授从初学者到专业级别的PADI认证课程（潜水长、礁石向导）", job6_b5: "确保运营安全，管理空气/高氧罐充装并维护设备合规",
+            job7_title: "潜水教练 / 销售代表", job7_date: "2015年4月 – 2017年2月", job7_b1: "带领礁石之旅、鲸鲨观赏探险和研究参与活动，创造难忘的客户体验", job7_b2: "提供从探索水肺潜水到潜水长认证级别的PADI课程", job7_b3: "创造增值服务，包括为度假村客人拍摄和编辑婚礼视频，助力提升客户满意度", job7_b4: "维护优质服务标准，执行水下餐厅清洁以保持客户用餐体验", job7_b5: "管理客户关系，与客人咨询以增加忠诚度和重复预订",
+            job8_title: "潜水教练 / 销售代表", job8_date: "2012年10月 – 2015年3月", job8_b1: "持续实现<strong>100%销售目标</strong>，获得丽思卡尔顿坎昆、Grand Park Royal和Hyatt Zilara等高端五星级酒店客户", job8_b2: "管理<strong>50多家豪华酒店</strong>的销售，代表公司的水上运动和旅游组合", job8_b3: "在拉丁美洲最大的码头执行潜水，提供高质量客户体验", job8_b4: "通过咨询式销售方法建立持久的客户关系，推动重复业务和推荐", job8_b5: "在高端酒店环境中代表公司的专业形象",
+            job9_title: "英语教师（兼职）", job9_date: "2012年1月 – 2013年2月", job9_b1: "为最多15名学生的班级教授英语课，涵盖多个熟练程度", job9_b2: "创建引人入胜的课程材料，为成人学习者开发互动课堂环境", job9_b3: "对学生进行激励性预电话，提高课程续读率和学生满意度", job9_b4: "评估学生进度并提供个性化反馈以确保学习成果",
+            job10_title: "日语教师", job10_date: "2012年1月 – 2013年1月", job10_b1: "教授日语课程，制定教案并为学生准备能力考试", job10_b2: "管理最多15名学生的班级，创建互动学习环境和文化沉浸活动", job10_b3: "与学生进行后续咨询以监控进度并保持参与度",
+            edu_title: "教育背景",
+            edu0_title: "鱼类学硕士（一年级）", edu0_date: "在读",
+            edu1_title: "管理学硕士（国际商务）", edu1_date: "2026年7月15日毕业", edu1_b1: "联邦教育代码：", edu1_b2: "以<span class='red-diploma'>优等学位（红本毕业证）</span>毕业", edu1_b3: "论文：《墨西哥加勒比地区的国际商务管理》",
+            edu2_title: "工商管理学士（BBA）",
+            certs_title: "证书与课程", cert1: "2025: Teaching English to Young Learners", cert2: "2023: NDL 自由潜水教练", cert3: "2022: TEFL / TESOL (World TESOL Academy)", cert4: "2021: English Teaching (TEFL/TESOL)", cert5: "2017: Commercial Diver (Norwegian School)", cert6: "2017: DAN First Aid, AED, Neuro Assessment, Oxygen, BLS, IMCA Surface Supplied Diver", cert7: "2014: DAN/EFR/ERDI First Aid Instructor", cert8: "2013: PADI/SDI/NDL Dive Instructor",
+            ref_title: "推荐人", ref_desc: "应要求提供。"
         }
     };
 
     function setLang(lang) {
-        document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
-        // Find the clicked button and set active
+        // Update active state on buttons
         const buttons = document.querySelectorAll('.lang-switcher button');
+        buttons.forEach(btn => btn.classList.remove('active'));
         for (let btn of buttons) {
-            if (btn.textContent.toLowerCase().includes(lang)) {
+            if (btn.textContent.toLowerCase().includes(lang) || 
+                (lang === 'zh' && btn.textContent.includes('中文')) ||
+                (lang === 'ja' && btn.textContent.includes('日本語')) ||
+                (lang === 'ru' && btn.textContent.includes('Русский')) ||
+                (lang === 'es' && btn.textContent.includes('Español')) ||
+                (lang === 'en' && btn.textContent.includes('English'))) {
                 btn.classList.add('active');
                 break;
             }
         }
         
         const dict = translations[lang];
+        if (!dict) return;
+        
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (dict[key] !== undefined) {
